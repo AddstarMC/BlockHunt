@@ -337,7 +337,7 @@ public class BlockHunt extends JavaPlugin implements Listener {
 									if (!arena.seekers.contains(arenaPlayer)) {
 										String block = arenaPlayer.getInventory().getItem(8).getType().name();
 										//Make lowercase and capitalise first letter.
-										block = block.substring(0, 0).toUpperCase() + block.substring(1).toLowerCase();
+										block = block.substring(0, 1).toUpperCase() + block.substring(1).toLowerCase();
 										if (!remainingBlocks.contains(block)) {
 											remainingBlocks.add(block);
 										}
