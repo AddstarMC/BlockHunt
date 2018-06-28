@@ -4,7 +4,6 @@ import nl.Steffion.BlockHunt.*;
 import nl.Steffion.BlockHunt.MemoryStorage;
 import nl.Steffion.BlockHunt.Managers.MessageManager;
 
-import nl.Steffion.BlockHunt.Serializables.LocationSerializable;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
@@ -29,19 +28,19 @@ public class CMDsetwarp extends DefaultCMD {
 				if (arena != null) {
 					Location loc = player.getLocation();
 					if (warpname.equalsIgnoreCase("lobby")) {
-						arena.lobbyWarp = new LocationSerializable(loc);
+						arena.lobbyWarp = loc;
 						save(arena);
 						MessageManager.sendFMessage(player, ConfigC.normal_setwarpWarpSet, "warp-" + warpname);
 					} else if (warpname.equalsIgnoreCase("hiders")) {
-						arena.hidersWarp = new LocationSerializable(loc);
+						arena.hidersWarp = loc;
 						save(arena);
 						MessageManager.sendFMessage(player, ConfigC.normal_setwarpWarpSet, "warp-" + warpname);
 					} else if (warpname.equalsIgnoreCase("seekers")) {
-						arena.seekersWarp = new LocationSerializable(loc);
+						arena.seekersWarp = loc;
 						save(arena);
 						MessageManager.sendFMessage(player, ConfigC.normal_setwarpWarpSet, "warp-" + warpname);
 					} else if (warpname.equalsIgnoreCase("spawn")) {
-						arena.spawnWarp = new LocationSerializable(loc);
+						arena.spawnWarp = loc;
 						save(arena);
 						MessageManager.sendFMessage(player, ConfigC.normal_setwarpWarpSet, "warp-" + warpname);
 					} else {

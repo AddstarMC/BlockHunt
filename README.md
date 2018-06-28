@@ -11,9 +11,9 @@ This plugin has been heavily inspired from the gamemode "PropHunt", from the gam
 
 ### Downloads
 
-| Branch | Plugin version | Compatiable Minecraft version | Build status | Download |
-| ---    | ---            | ---                           | ---          | ---      |
-| Release| **v0.2.1**     | **v1.12.2**                   | [![Build Status](https://jenkins.addstar.com.au/job/Blockhunt/badge/icon)] | [DOWNLOAD](https://jenkins.addstar.com.au/job/Blockhunt/lastSuccessfulBuild/artifact/target/) |
+| Branch               | Plugin version          | Tested Minecraft version | Download |
+| ---                  | ---                     | ---                      | ---      |
+| master (rt50631 fork)| **v0.3.0-Snapshot**     | **v1.12**                | [DOWNLOAD](http://s000.tinyupload.com/index.php?file_id=00810016419868876516) |
 
 #### This plugin requires you to download and install two addinonal plugins! ([Lib's Disguises](https://www.spigotmc.org/resources/libs-disguises.81/) and [ProtocolLib](http://dev.bukkit.org/bukkit-plugins/protocollib/))
 

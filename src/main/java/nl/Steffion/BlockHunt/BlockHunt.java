@@ -39,7 +39,6 @@ import nl.Steffion.BlockHunt.Managers.CommandManager;
 import nl.Steffion.BlockHunt.Managers.ConfigManager;
 import nl.Steffion.BlockHunt.Managers.MessageManager;
 import nl.Steffion.BlockHunt.Managers.PermissionsManager;
-import nl.Steffion.BlockHunt.Serializables.LocationSerializable;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
@@ -111,6 +110,7 @@ public class BlockHunt extends JavaPlugin implements Listener {
 	public static CommandManager CMDremove;
 	public static CommandManager CMDtokens;
 
+	@SuppressWarnings("deprecation")
 	public void onEnable() {
 		getServer().getPluginManager().registerEvents(this, this);
 
@@ -132,7 +132,7 @@ public class BlockHunt extends JavaPlugin implements Listener {
 		getServer().getPluginManager().registerEvents(new OnPlayerQuitEvent(), this);
 		getServer().getPluginManager().registerEvents(new OnSignChangeEvent(), this);
 
-		ConfigurationSerialization.registerClass(LocationSerializable.class, "BlockHuntLocation");
+		ConfigurationSerialization.registerClass(Location.class, "BlockHuntLocation");
 		ConfigurationSerialization.registerClass(Arena.class, "BlockHuntArena");
 
 		pdfFile = getDescription();

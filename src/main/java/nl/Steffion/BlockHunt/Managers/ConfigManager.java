@@ -26,7 +26,9 @@ public class ConfigManager {
 	private String fileName;
 	private File file;
 	private FileConfiguration fileC;
+	@SuppressWarnings("unused")
 	private ConfigurationSection fileCS;
+	@SuppressWarnings("unused")
 	private File fileLocation;
 
 	/**

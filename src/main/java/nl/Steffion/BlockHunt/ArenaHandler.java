@@ -46,6 +46,7 @@ public class ArenaHandler {
 		}
 	}
 
+	@SuppressWarnings("deprecation")
 	public static void playerJoinArena(Player player, String arenaname) {
 		boolean found = false;
 		boolean alreadyJoined = false;
@@ -216,6 +217,7 @@ public class ArenaHandler {
 		SignsHandler.updateSigns();
 	}
 
+	@SuppressWarnings("deprecation")
 	public static void playerLeaveArena(Player player, boolean message, boolean cleanup) {
 
 		Arena arena = null;
